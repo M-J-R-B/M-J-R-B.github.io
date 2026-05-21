@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{NAME}} — CV</title>
+  <meta name="description" content="CV of {{NAME}} — {{TAGLINE}}" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2214%22>M</text></svg>" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<!--
+  PLACEHOLDERS — find and replace before publishing:
+    {{NAME}}            Full name, e.g. "Mary Jhoy Baselisco"
+    {{TAGLINE}}         One-line role, e.g. "Software Developer"
+    {{PHONE}}           Phone, e.g. "+63 900 000 0000"
+    {{ADDRESS}}         City, Country (or full address if desired)
+    {{SUMMARY}}         2-4 sentence professional summary
+    {{SKILLS_LANGUAGES}}      Comma-separated languages
+    {{SKILLS_FRAMEWORKS}}     Comma-separated frameworks
+    {{SKILLS_TOOLS}}          Comma-separated tools / platforms
+    {{JOB_n_*}}         Job title / company / dates / bullets (duplicate <article> for more jobs)
+    {{EDU_n_*}}         Degree / school / dates (duplicate <article> for more entries)
+-->
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">{{NAME}}</a>
+    <nav class="top-nav">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+    <button id="theme-toggle" type="button" aria-label="Toggle color theme">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>{{NAME}}</h1>
+        <p class="tagline">{{TAGLINE}}</p>
+        <ul class="contact-pills">
+          <li><a href="mailto:mbaselisco@gmail.com">mbaselisco@gmail.com</a></li>
+          <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+          <li>{{ADDRESS}}</li>
+          <li><a href="https://github.com/M-J-R-B" target="_blank" rel="noopener">github.com/M-J-R-B</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>{{SUMMARY}}</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+
+        <article class="project">
+          <h3>ISBN Lookup</h3>
+          <p>Web app for looking up book metadata by ISBN. Deployed live on Vercel.</p>
+          <ul class="tags"><li>HTML</li><li>JavaScript</li><li>Vercel</li></ul>
+          <p class="links">
+            <a href="https://isbnlookup.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/M-J-R-B/ISBN-Look-up" target="_blank" rel="noopener">Source ↗</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>CrabTrack — Marine Research Suite</h3>
+          <p>A family of tools supporting crab and manta research: a Kotlin Android field-recording app, an HTML companion for manta sightings, an OpenAI-powered molting analysis script, and an exhibit poster.</p>
+          <ul class="tags"><li>Kotlin</li><li>Android</li><li>Python</li><li>OpenAI</li><li>HTML/CSS</li></ul>
+          <p class="links">
+            <a href="https://github.com/M-J-R-B/CrabTrack" target="_blank" rel="noopener">CrabTrack ↗</a>
+            <a href="https://github.com/M-J-R-B/MantaTrack" target="_blank" rel="noopener">MantaTrack ↗</a>
+            <a href="https://github.com/M-J-R-B/OpenAI-MoltingCrab" target="_blank" rel="noopener">OpenAI-MoltingCrab ↗</a>
+            <a href="https://github.com/M-J-R-B/Exhibit2K26-CrabTrack-Poster" target="_blank" rel="noopener">Exhibit Poster ↗</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>CleanSmart</h3>
+          <p>Full-stack mobile platform: Kotlin Android client (CleanSmart-1), Java reference build (cleansmart2), and a Node.js backend service.</p>
+          <ul class="tags"><li>Kotlin</li><li>Java</li><li>Node.js</li><li>Android</li></ul>
+          <p class="links">
+            <a href="https://github.com/M-J-R-B/CleanSmart-1" target="_blank" rel="noopener">Android ↗</a>
+            <a href="https://github.com/M-J-R-B/cleansmart2" target="_blank" rel="noopener">Java build ↗</a>
+            <a href="https://github.com/M-J-R-B/CleanSmart-Server" target="_blank" rel="noopener">Server ↗</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>IllumiNight</h3>
+          <p>Kotlin Android application focused on nighttime illumination / smart-light controls.</p>
+          <ul class="tags"><li>Kotlin</li><li>Android</li></ul>
+          <p class="links">
+            <a href="https://github.com/M-J-R-B/IllumiNight" target="_blank" rel="noopener">Source ↗</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Odoo Raffles Library</h3>
+          <p>Odoo customization implementing a raffles library workflow — custom models, views, and automation.</p>
+          <ul class="tags"><li>Odoo</li><li>Python</li><li>XML</li></ul>
+          <p class="links">
+            <a href="https://github.com/M-J-R-B/odoo" target="_blank" rel="noopener">Source ↗</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Student Portal &amp; Enrollment System</h3>
+          <p>Academic project: a web-based student portal paired with an enrollment-management system.</p>
+          <ul class="tags"><li>HTML</li><li>Web</li></ul>
+          <p class="links">
+            <a href="https://github.com/M-J-R-B/StudentPortal.Web" target="_blank" rel="noopener">Student Portal ↗</a>
+            <a href="https://github.com/M-J-R-B/Enrollment-System" target="_blank" rel="noopener">Enrollment ↗</a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>{{SKILLS_LANGUAGES}}</dd>
+        <dt>Frameworks</dt>
+        <dd>{{SKILLS_FRAMEWORKS}}</dd>
+        <dt>Tools &amp; Platforms</dt>
+        <dd>{{SKILLS_TOOLS}}</dd>
+      </dl>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <!-- Duplicate this <article> block for additional jobs. -->
+      <article class="entry">
+        <header>
+          <h3>{{JOB_1_TITLE}} — {{JOB_1_COMPANY}}</h3>
+          <p class="dates">{{JOB_1_DATES}}</p>
+        </header>
+        <p>{{JOB_1_BULLETS}}</p>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>{{JOB_2_TITLE}} — {{JOB_2_COMPANY}}</h3>
+          <p class="dates">{{JOB_2_DATES}}</p>
+        </header>
+        <p>{{JOB_2_BULLETS}}</p>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <article class="entry">
+        <header>
+          <h3>{{EDU_1_DEGREE}} — {{EDU_1_SCHOOL}}</h3>
+          <p class="dates">{{EDU_1_DATES}}</p>
+        </header>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <a href="https://github.com/M-J-R-B" target="_blank" rel="noopener">github.com/M-J-R-B</a>
+      · Last updated 2026-05
+    </p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
