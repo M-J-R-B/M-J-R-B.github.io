@@ -1,23 +1,12 @@
 # M-J-R-B.github.io
 
-Personal CV for Mary Jhoy Baselisco — a single-page static site hosted on GitHub Pages.
+Personal CV for Mary Jhoy R. Baselisco — a single-page static site hosted on GitHub Pages.
 
 Live: https://m-j-r-b.github.io
 
 ## Editing content
 
-Open `index.html` and find/replace the `{{PLACEHOLDER}}` tokens. They're listed in a comment at the top of the file:
-
-- `{{NAME}}`, `{{TAGLINE}}`, `{{PHONE}}`, `{{ADDRESS}}`, `{{SUMMARY}}`
-- `{{SKILLS_LANGUAGES}}`, `{{SKILLS_FRAMEWORKS}}`, `{{SKILLS_TOOLS}}`
-- `{{JOB_1_TITLE}}` … `{{JOB_2_BULLETS}}` (duplicate the `<article class="entry">` block for more jobs)
-- `{{EDU_1_DEGREE}}`, `{{EDU_1_SCHOOL}}`, `{{EDU_1_DATES}}`
-
-To list remaining placeholders at any time:
-
-```
-grep -r "{{" .
-```
+All content is in `index.html`. To add a new job, duplicate the `<article class="entry">` block inside `#experience`. To add a project, duplicate a `<article class="project">` block inside `.project-grid`.
 
 Optional: drop an `assets/avatar.png` (square, ~256px) and add `<img src="assets/avatar.png" alt="" class="avatar">` inside the `.hero` section.
 

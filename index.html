@@ -3,27 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{NAME}} — CV</title>
-  <meta name="description" content="CV of {{NAME}} — {{TAGLINE}}" />
+  <title>Mary Jhoy R. Baselisco — CV</title>
+  <meta name="description" content="CV of Mary Jhoy R. Baselisco — Software Developer & BSIT Graduate" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2214%22>M</text></svg>" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<!--
-  PLACEHOLDERS — find and replace before publishing:
-    {{NAME}}            Full name, e.g. "Mary Jhoy Baselisco"
-    {{TAGLINE}}         One-line role, e.g. "Software Developer"
-    {{PHONE}}           Phone, e.g. "+63 900 000 0000"
-    {{ADDRESS}}         City, Country (or full address if desired)
-    {{SUMMARY}}         2-4 sentence professional summary
-    {{SKILLS_LANGUAGES}}      Comma-separated languages
-    {{SKILLS_FRAMEWORKS}}     Comma-separated frameworks
-    {{SKILLS_TOOLS}}          Comma-separated tools / platforms
-    {{JOB_n_*}}         Job title / company / dates / bullets (duplicate <article> for more jobs)
-    {{EDU_n_*}}         Degree / school / dates (duplicate <article> for more entries)
--->
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">{{NAME}}</a>
+    <a class="brand" href="#top">MJB</a>
     <nav class="top-nav">
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -38,12 +25,12 @@
   <main id="top">
     <section class="hero">
       <div class="hero-text">
-        <h1>{{NAME}}</h1>
-        <p class="tagline">{{TAGLINE}}</p>
+        <h1>Mary Jhoy R. Baselisco</h1>
+        <p class="tagline">Software Developer &amp; IT Graduate</p>
         <ul class="contact-pills">
           <li><a href="mailto:mbaselisco@gmail.com">mbaselisco@gmail.com</a></li>
-          <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
-          <li>{{ADDRESS}}</li>
+          <li><a href="tel:+639498710872">09498710872</a></li>
+          <li>Mandaue City, Cebu</li>
           <li><a href="https://github.com/M-J-R-B" target="_blank" rel="noopener">github.com/M-J-R-B</a></li>
         </ul>
       </div>
@@ -51,12 +38,27 @@
 
     <section id="about">
       <h2>About</h2>
-      <p>{{SUMMARY}}</p>
+      <p>
+        Fresh BSIT graduate from the University of Cebu – Banilad with hands-on experience in full-stack web and mobile development, IoT systems, computer vision, and ERP automation. Led the CrabTrack capstone project — an award-winning IoT + AI platform for smarter crab farming — as both Project Manager and Backend Developer. Passionate about building practical software that solves real problems, with a growing specialization in Odoo customization, n8n workflow automation, and Android development.
+      </p>
     </section>
 
     <section id="projects">
       <h2>Featured Projects</h2>
       <div class="project-grid">
+
+        <article class="project project-featured">
+          <div class="award-badge">🏆 Best in Capstone — Excellence Award</div>
+          <h3>CrabTrack</h3>
+          <p class="project-sub">IoT Sensors &amp; Computer Vision for Smarter Crab Farming · June 2026</p>
+          <p>Web and mobile platform that uses ESP32 IoT sensors (pH, turbidity, ultrasonic) and YOLOv8 computer vision to monitor and optimize crab farming conditions in real time. Role: <strong>Project Manager &amp; Backend Developer</strong>.</p>
+          <ul class="tags"><li>Python</li><li>YOLOv8</li><li>ESP32</li><li>MQTT</li><li>Firebase</li><li>Android / Kotlin</li><li>Laravel</li></ul>
+          <p class="links">
+            <a href="https://crabtrack.xyz" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://tinyurl.com/y27rmsmb" target="_blank" rel="noopener">Android demo ↗</a>
+            <a href="https://github.com/M-J-R-B/CrabTrack" target="_blank" rel="noopener">Source ↗</a>
+          </p>
+        </article>
 
         <article class="project">
           <h3>ISBN Lookup</h3>
@@ -69,20 +71,18 @@
         </article>
 
         <article class="project">
-          <h3>CrabTrack — Marine Research Suite</h3>
-          <p>A family of tools supporting crab and manta research: a Kotlin Android field-recording app, an HTML companion for manta sightings, an OpenAI-powered molting analysis script, and an exhibit poster.</p>
-          <ul class="tags"><li>Kotlin</li><li>Android</li><li>Python</li><li>OpenAI</li><li>HTML/CSS</li></ul>
+          <h3>Odoo Library System &amp; n8n Integration</h3>
+          <p>Built and customized a full Library System in Odoo for Singapore School Cebu. Integrated an n8n workflow that automatically populates book details via external APIs.</p>
+          <ul class="tags"><li>Odoo Studio</li><li>Python</li><li>XML</li><li>n8n</li><li>JSON-RPC</li></ul>
           <p class="links">
-            <a href="https://github.com/M-J-R-B/CrabTrack" target="_blank" rel="noopener">CrabTrack ↗</a>
-            <a href="https://github.com/M-J-R-B/MantaTrack" target="_blank" rel="noopener">MantaTrack ↗</a>
-            <a href="https://github.com/M-J-R-B/OpenAI-MoltingCrab" target="_blank" rel="noopener">OpenAI-MoltingCrab ↗</a>
-            <a href="https://github.com/M-J-R-B/Exhibit2K26-CrabTrack-Poster" target="_blank" rel="noopener">Exhibit Poster ↗</a>
+            <a href="https://tinyurl.com/bpaa87j5" target="_blank" rel="noopener">n8n demo ↗</a>
+            <a href="https://github.com/M-J-R-B/odoo" target="_blank" rel="noopener">Source ↗</a>
           </p>
         </article>
 
         <article class="project">
           <h3>CleanSmart</h3>
-          <p>Full-stack mobile platform: Kotlin Android client (CleanSmart-1), Java reference build (cleansmart2), and a Node.js backend service.</p>
+          <p>Full-stack mobile platform: Kotlin Android client with a Java reference build and a Node.js backend service for smart cleaning management.</p>
           <ul class="tags"><li>Kotlin</li><li>Java</li><li>Node.js</li><li>Android</li></ul>
           <p class="links">
             <a href="https://github.com/M-J-R-B/CleanSmart-1" target="_blank" rel="noopener">Android ↗</a>
@@ -93,19 +93,10 @@
 
         <article class="project">
           <h3>IllumiNight</h3>
-          <p>Kotlin Android application focused on nighttime illumination / smart-light controls.</p>
+          <p>Kotlin Android application focused on nighttime illumination and smart-light controls.</p>
           <ul class="tags"><li>Kotlin</li><li>Android</li></ul>
           <p class="links">
             <a href="https://github.com/M-J-R-B/IllumiNight" target="_blank" rel="noopener">Source ↗</a>
-          </p>
-        </article>
-
-        <article class="project">
-          <h3>Odoo Raffles Library</h3>
-          <p>Odoo customization implementing a raffles library workflow — custom models, views, and automation.</p>
-          <ul class="tags"><li>Odoo</li><li>Python</li><li>XML</li></ul>
-          <p class="links">
-            <a href="https://github.com/M-J-R-B/odoo" target="_blank" rel="noopener">Source ↗</a>
           </p>
         </article>
 
@@ -125,33 +116,34 @@
     <section id="skills">
       <h2>Skills</h2>
       <dl class="skills">
-        <dt>Languages</dt>
-        <dd>{{SKILLS_LANGUAGES}}</dd>
-        <dt>Frameworks</dt>
-        <dd>{{SKILLS_FRAMEWORKS}}</dd>
-        <dt>Tools &amp; Platforms</dt>
-        <dd>{{SKILLS_TOOLS}}</dd>
+        <dt>Languages &amp; Frameworks</dt>
+        <dd>Python, PHP (Laravel 11), JavaScript, SQL</dd>
+        <dt>IoT &amp; Embedded</dt>
+        <dd>ESP32, MQTT, Firebase, ultrasonic / pH / turbidity sensors</dd>
+        <dt>AI / ML</dt>
+        <dd>YOLOv8, computer vision, RAG concepts</dd>
+        <dt>ERP &amp; Automation</dt>
+        <dd>Odoo Studio, Odoo JSON-RPC API, n8n workflows</dd>
+        <dt>Web &amp; Mobile</dt>
+        <dd>Laravel 11, MySQL, Android (Kotlin), Next.js basics</dd>
+        <dt>Tools</dt>
+        <dd>Git, Snipe-IT, Postman, Obsidian</dd>
       </dl>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
 
-      <!-- Duplicate this <article> block for additional jobs. -->
       <article class="entry">
         <header>
-          <h3>{{JOB_1_TITLE}} — {{JOB_1_COMPANY}}</h3>
-          <p class="dates">{{JOB_1_DATES}}</p>
+          <h3>IT Intern — Singapore School Cebu</h3>
+          <p class="dates">Feb. 2026 – May 2026 · Mandaue City, Cebu</p>
         </header>
-        <p>{{JOB_1_BULLETS}}</p>
-      </article>
-
-      <article class="entry">
-        <header>
-          <h3>{{JOB_2_TITLE}} — {{JOB_2_COMPANY}}</h3>
-          <p class="dates">{{JOB_2_DATES}}</p>
-        </header>
-        <p>{{JOB_2_BULLETS}}</p>
+        <ul class="entry-bullets">
+          <li>Built a Library System in Odoo and customized Odoo modules to fit the school's processes.</li>
+          <li>Integrated an n8n workflow in Odoo that automatically populates book details from external APIs.</li>
+          <li>Managed IT assets and support using Snipe-IT.</li>
+        </ul>
       </article>
     </section>
 
@@ -160,9 +152,12 @@
 
       <article class="entry">
         <header>
-          <h3>{{EDU_1_DEGREE}} — {{EDU_1_SCHOOL}}</h3>
-          <p class="dates">{{EDU_1_DATES}}</p>
+          <h3>Bachelor of Science in Information Technology — University of Cebu – Banilad</h3>
+          <p class="dates">Graduated June 2026 · Cebu City, Cebu</p>
         </header>
+        <ul class="entry-bullets">
+          <li>Dean's List, 2022</li>
+        </ul>
       </article>
     </section>
   </main>
