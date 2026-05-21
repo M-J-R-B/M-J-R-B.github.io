@@ -316,6 +316,59 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+/* ── Video thumbnail ── */
+.video-thumb {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.85rem;
+  aspect-ratio: 16 / 9;
+  background: var(--border);
+  text-decoration: none;
+}
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.88);
+}
+.video-thumb:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.7);
+}
+.play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px; height: 52px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  padding-left: 3px; /* optical centre for ▶ */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, background 0.2s;
+}
+.video-thumb:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: var(--accent-2);
+}
+.video-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  letter-spacing: 0.02em;
+}
+
 /* ── Skills ── */
 .skills {
   display: grid;
