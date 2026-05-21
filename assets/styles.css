@@ -170,6 +170,34 @@ a:hover { color: var(--accent-2); }
 }
 .contact-pills a { color: var(--fg); }
 
+/* ── Download button ── */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  padding: 0.55rem 1.25rem;
+  background: var(--accent);
+  color: #fff !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--accent) 40%, transparent);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  -webkit-text-fill-color: #fff;
+}
+.btn-download:hover {
+  background: var(--accent-2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--accent) 50%, transparent);
+  text-decoration: none;
+}
+.btn-download:active {
+  transform: translateY(0);
+}
+
 /* ── Main layout ── */
 main > section,
 main > .hero { /* hero handled above */ }
